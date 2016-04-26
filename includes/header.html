@@ -16,13 +16,13 @@
          ?>-->
     </title>
 
-    <script src="../css/jquery-1.10.2.min.js"></script>
+    <script src="css/jquery-1.10.2.min.js"></script>
 
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
 
 </head>
 <body>
@@ -38,6 +38,44 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            <a class="navbar-brand" href="index.php">Knowledge is Power</a>
+            <div class="nav-collapse collapse">
+                <a class="nav navbar-nav">
+                    <?pgp //Dynamically create header menus..
+
+                    //Array of labels and pages (without extentions):
+                    $pages = array(
+                        'Home' => 'index.php',
+                        'About' => '#',
+                        'Contact' =>'#',
+                        'Register' => 'register.php'
+                    );
+
+                    //The page being viewed :
+                    $this_page = basename($_SERVER['PHP_SELF']);
+
+                    //Create each menu item:
+                    foreach($pages as $k => $v){
+
+                    //Start the item
+                    echo '<li';
+
+                    //Add the class if it's the current page:
+                    if($this_page == $v) echo 'class = "active";
+
+                    //Complete the item:
+                    echo '><a href="' . $v '">' . $k . '</a> </li>
+                    ';} //End of FOREACH loop.
+
+                    //show the user options:
+                    if(isset($_session['user_id'])){
+
+                        //show basic user options:
+                        echo '<li class="dropdown">
+
+                            </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
