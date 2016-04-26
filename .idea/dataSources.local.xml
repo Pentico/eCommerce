@@ -7,5 +7,11 @@
       <schema-pattern>ecommerce1.*</schema-pattern>
       <default-schemas>ecommerce1.*</default-schemas>
     </data-source>
+    <data-source name="MySQL - Jswap@localhost" uuid="040d73a5-5308-417b-803e-110883505fcc">
+      <secret-storage>master_key</secret-storage>
+      <user-name>Alfred</user-name>
+      <schema-pattern>jswap.*</schema-pattern>
+      <default-schemas>jswap.*</default-schemas>
+    </data-source>
   </component>
 </project>
