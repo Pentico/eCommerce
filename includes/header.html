@@ -7,13 +7,12 @@
     <meta name="author" content="">
 
     <title>
-            debug
-       <!-- <?php if(isset($page_title)){
+        <?php if(isset($page_title)){
         echo $page_title;
         }else{
          echo 'Knowledge is Power: And It Pays to know';
          }
-         ?>-->
+         ?>
     </title>
 
     <script src="css/jquery-1.10.2.min.js"></script>
@@ -40,7 +39,7 @@
             </button>
             <a class="navbar-brand" href="index.php">Knowledge is Power</a>
             <div class="nav-collapse collapse">
-                <a class="nav navbar-nav">
+                <ul class="nav navbar-nav">
                     <?pgp //Dynamically create header menus..
 
                     //Array of labels and pages (without extentions):
@@ -61,14 +60,16 @@
                     echo '<li';
 
                     //Add the class if it's the current page:
-                    if($this_page == $v) echo 'class = "active";
+                    if($this_page == $v) echo 'class = "active" ';
 
                     //Complete the item:
-                    echo '><a href="' . $v '">' . $k . '</a> </li>
-                    ';} //End of FOREACH loop.
+                    echo ' ><a href="' . $v '">' . $k . '</a> </li>
+                    ';
+
+                    } //End of FOREACH loop.
 
                     //show the user options:
-                    if(isset($_session['user_id'])){
+                    if(isset($_SESSION['user_id'])){
 
                         //show basic user options:
                         echo '<li class="dropdown">
@@ -114,9 +115,9 @@
                         $q = 'SELECT * FROM categories ORDER BY category';
                         $r = mysqli_query($dbc, $q);
                         while (list($id, $category) = mysqli_fetch_array($r,MYSQLI_NUM)){
-                                echo '<a href= "category.php?id=' .$id .'" class ="list-group-item" title="' . $category .'">' .htmlspechialchars($category) .'
-
-                        </a>';
+                               	echo '<a href="category.php?id=' . $id . '" class="list-group-item" title="' . $category . '">' . htmlspecialchars($category) .
+                            '
+                                </a>';
                     }
                     ?>
                             <a href="pdfs.php" class="list-group-item" title="PDFs">PDF Guides</a>
@@ -129,9 +130,8 @@
                         }
                         ?>
 
-
-
             </div> <!--/col-3-->
+
             <div class="col-9">
                 <!-- CONTENT -->
 
