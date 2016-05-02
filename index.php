@@ -6,7 +6,7 @@
  * Time: 8:48 PM
  */
 
-require('./includes/Config.php');
+require('./includes/config.inc.php');
 require ('./includes/mysql.inc.php'); //The database connection TODO: Why doesn't MYSQL work ?
 include ('./includes/header.html');
 
