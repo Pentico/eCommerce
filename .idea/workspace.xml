@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b63789a-a884-4401-a357-5b7203422a3f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/register.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/includes/Config.php" afterPath="$PROJECT_DIR$/includes/config.inc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register.php" afterPath="$PROJECT_DIR$/register.php" />
     </list>
     <ignored path="eCommerce.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,6 +35,30 @@
       </PATH_ELEMENT>
     </PATH>
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
+              <entry file="file://$USER_HOME$/Downloads/Compressed/effortless_ecommerce_2nd/effortless_ecommerce_2nd/ex1/html/register.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="608">
+                    <caret line="176" column="2" selection-start-line="176" selection-start-column="2" selection-end-line="176" selection-end-column="2" />
+                    <folding>
+                      <marker date="1379847752000" expanded="true" signature="2045:2112" placeholder="SELECT email... users" />
+                      <marker date="1379847752000" expanded="true" signature="2809:3003" placeholder="INSERT INTO users... " />
+                      <marker date="1379847752000" expanded="true" signature="4026:4506" placeholder="..." />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="eCommerce" />
@@ -48,18 +70,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
               <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-              <folding>
-                <element signature="e#6#89#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mysql.inc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/mysql.inc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
               <folding>
                 <element signature="e#6#89#0#PHP" expanded="true" />
               </folding>
@@ -93,8 +103,8 @@
       <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+            <state relative-caret-position="586">
+              <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -357,7 +367,7 @@
       <workItem from="1461742895770" duration="3774000" />
       <workItem from="1461746887622" duration="5200000" />
       <workItem from="1462130252538" duration="1247000" />
-      <workItem from="1462214811055" duration="5227000" />
+      <workItem from="1462214811055" duration="6729000" />
     </task>
     <task id="LOCAL-00001" summary="Created database">
       <created>1461606016457</created>
@@ -450,15 +460,22 @@
       <option name="project" value="LOCAL" />
       <updated>1462218911549</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added the register.php">
+      <created>1462220246887</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1462220246887</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41719000" />
+    <option name="totallyTimeSpent" value="43221000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1040" height="784" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16015625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -506,7 +523,8 @@
     <MESSAGE value="The Content file and the footer is not working" />
     <MESSAGE value="redirect function in the Config.php file" />
     <MESSAGE value="added a form_functions.inc.php&#10;Created a function called create_form_input ." />
-    <option name="LAST_COMMIT_MESSAGE" value="added a form_functions.inc.php&#10;Created a function called create_form_input ." />
+    <MESSAGE value="Added the register.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the register.php" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -515,14 +533,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/379917b6-3ba2-4fce-aed8-398dcb46286b/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -855,10 +865,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/effortless_ecommerce_2nd/effortless_ecommerce_2nd/ex1/html/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="176" column="2" selection-start-line="176" selection-start-column="2" selection-end-line="176" selection-end-column="2" />
+          <folding>
+            <marker date="1379847752000" expanded="true" signature="2045:2112" placeholder="SELECT email... users" />
+            <marker date="1379847752000" expanded="true" signature="2809:3003" placeholder="INSERT INTO users... " />
+            <marker date="1379847752000" expanded="true" signature="4026:4506" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+        <state relative-caret-position="586">
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
           <folding />
         </state>
       </provider>
