@@ -56,6 +56,19 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     } else {
         $reg_errors['pass1'] = 'Please enter a valid password!';
     }
+
+
+    //if they are no errors
+    if(empty($reg_errors)){
+        $q = "SELECT email, username FROM users WHERE email='$e' OR username='$u'";
+        $r = mysqli_query($dbc,$q);
+        $rows = mysqli_num_rows($r);
+        if($rows ===0){
+            $q = "INSERT INTO users (username,email,pass,first_name,last_name,date_expires)VALUES 
+                  ('$u','$e','" .password_hash($p,PASSWORD_BCRYPT)')"
+
+        }
+    }
 }
 
 ?>
